@@ -89,13 +89,13 @@ This project consists of two parts:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/Crazyhaller/ai-planet-assignment.git
+   git clone https://github.com/Crazyhaller/infloso-assignment.git
    ```
 
 2. Navigate to the project directory:
 
    ```sh
-   cd ai-planet-assignment
+   cd infloso-assignment
    ```
 
 3. Install dependencies on both Backend and Frontend folders:
