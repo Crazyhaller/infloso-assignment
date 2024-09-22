@@ -101,10 +101,10 @@ This project consists of two parts:
 3. Install dependencies on both Backend and Frontend folders:
 
    ```sh
-   cd ./backend
+   cd .\backend\
    npm install
    cd ../
-   cd ./frontend
+   cd .\frontend\
    npm install
    ```
 

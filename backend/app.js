@@ -20,7 +20,7 @@ app.use(cookieParser())
 app.use(rateLimiter)
 
 // Routes
-app.use('/api/auth', authRoutes, rateLimter)
+app.use('/api/auth', authRoutes, rateLimiter)
 
 // Database connection
 connectDB()

@@ -14,16 +14,16 @@ const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex flex-wrap justify-between items-center">
         <motion.div
           className="text-3xl font-extrabold text-pink-400"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <h2>MelodyVerse</h2>
+          <a href="/home">MelodyVerse</a>
         </motion.div>
-        <div className="flex space-x-4">
+        <div className="flex flex-wrap space-x-4 mt-2 sm:mt-0">
           <motion.div
             className="text-lg text-purple-400 hover:text-pink-400 transition-colors duration-300"
             initial={{ scale: 0.8, opacity: 0 }}
@@ -51,6 +51,16 @@ const Navbar = () => {
                 <Link to="/signup">Signup</Link>
               </motion.div>
             </>
+          )}
+          {token && (
+            <motion.div
+              className="text-lg text-white"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <p>Logged In</p>
+            </motion.div>
           )}
         </div>
       </div>
